@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "553c5c9b-c37b-41d3-bf51-54d36d5ecc25",
+		"name": "UinamesStatistics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Uinames-Paloma",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "827add74-dc55-4aaa-8410-00a944b70282",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://fminambresustglobal-eval-test.apigee.net/uinames?ext",
+					"protocol": "http",
+					"host": [
+						"fminambresustglobal-eval-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"uinames"
+					],
+					"query": [
+						{
+							"key": "ext",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a0a83e34-f513-47c0-af46-1219f9f3e8aa",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3489b133-109d-427d-a230-e0dbfc75b4b9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
